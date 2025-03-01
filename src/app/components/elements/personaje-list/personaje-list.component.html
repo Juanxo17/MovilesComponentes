@@ -1,0 +1,11 @@
+<ion-list>
+  <ion-item *ngFor="let personaje of personajes">
+    <ion-thumbnail slot="start"></ion-thumbnail>
+    <ion-avatar slot="start">
+      <ion-img [src]="personaje.image"></ion-img>
+    </ion-avatar>
+    <ion-label>{{ personaje.name }}</ion-label>
+
+    
+  </ion-item>
+</ion-list>

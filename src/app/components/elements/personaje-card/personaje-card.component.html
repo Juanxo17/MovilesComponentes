@@ -1,0 +1,20 @@
+<ion-card>
+  <img [src]="personaje?.image" alt="Imagen de {{ personaje?.name }}" />
+
+  <ion-card-header>
+    <ion-card-title>{{ personaje?.name }}</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    <p><strong>Estado:</strong> {{ personaje?.status }}</p>
+    <p><strong>Especie:</strong> {{ personaje?.species }}</p>
+    <p><strong>Género:</strong> {{ personaje?.gender }}</p>
+    <p><strong>Origen:</strong> {{ personaje?.origin?.name }}</p>
+    <p><strong>Ubicación actual:</strong> {{ personaje?.location?.name }}</p>
+
+    <h3>Episodios:</h3>
+    <ul>
+      <li *ngFor="let episodio of episodios">{{ episodio }}</li>
+    </ul>
+  </ion-card-content>
+</ion-card>
