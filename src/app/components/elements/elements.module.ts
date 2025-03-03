@@ -3,8 +3,9 @@ import { CommonModule } from '@angular/common';
 import { PersonajeListComponent } from './personaje-list/personaje-list.component';
 import { PersonajeCardComponent } from './personaje-card/personaje-card.component';
 import { EpisodioCardComponent } from './episodio-card/episodio-card.component';
-import { EpisodioListComponent } from './episodio-list/episodio-list.component';
+import { EpisodiosListComponent } from './episodios-list/episodios-list.component';
 import { IonicModule } from '@ionic/angular';
+import { LugaresListComponent } from './lugares-list/lugares-list.component';
 
 
 
@@ -13,8 +14,9 @@ import { IonicModule } from '@ionic/angular';
     
     PersonajeListComponent,
     PersonajeCardComponent,
-    EpisodioListComponent,
-    EpisodioCardComponent],
+    EpisodiosListComponent,
+    EpisodioCardComponent,
+    LugaresListComponent],
   imports: [
     CommonModule,
     IonicModule
@@ -22,8 +24,9 @@ import { IonicModule } from '@ionic/angular';
   exports:[ 
     PersonajeListComponent,
     PersonajeCardComponent,
-    EpisodioListComponent,
-    EpisodioCardComponent
+    EpisodiosListComponent,
+    EpisodioCardComponent,
+    LugaresListComponent
   ]
 })
 export class ElementsModule {}
